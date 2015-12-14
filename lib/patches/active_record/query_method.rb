@@ -3,7 +3,7 @@ require 'active_record/attribute_methods/query'
 module ActiveRecord
   module AttributeMethods
     module Query
-      def query_attribute(attr_name)
+      def jl_disabled_query_attribute(attr_name)
         unless value = read_attribute(attr_name)
           false
         else
